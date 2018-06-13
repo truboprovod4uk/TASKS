@@ -1,0 +1,8 @@
+# програма яка генерую табличку множення, та записує її в файл, який після цього закриває
+tabl = open('tablmnoz.txt', 'w')
+for i in range(2,10):
+    for j in range(2,10):
+          tabl.write(str(i) + ' * ' + str(j) + ' = ' + str(i*j) + '\n')
+    tabl.write('----------' + '\n')
+
+tabl.close()
