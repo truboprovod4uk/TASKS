@@ -1,6 +1,6 @@
-#Програма виводить найдовше та найкоротше слово введене корисутвачем
+#РџСЂРѕРіСЂР°РјР° РІРёРІРѕРґРёС‚СЊ РЅР°Р№РґРѕРІС€Рµ С‚Р° РЅР°Р№РєРѕСЂРѕС‚С€Рµ СЃР»РѕРІРѕ РІРІРµРґРµРЅРµ РєРѕСЂРёСЃСѓС‚РІР°С‡РµРј
 #Variant - 1
-s = input('Введіть тут текст: ')
+s = input('Р’РІРµРґС–С‚СЊ С‚СѓС‚ С‚РµРєСЃС‚: ')
 count = 0
 max_count = 0
 min_count = len(s)
@@ -22,34 +22,6 @@ for i in range(len(s)):
             min_slovo=slovo
         slovo=''
         count=0
-print('Найдовше слово:', max_slovo)
-print('Найкоротше слово:', min_slovo)
+print('РќР°Р№РґРѕРІС€Рµ СЃР»РѕРІРѕ:', max_slovo)
+print('РќР°Р№РєРѕСЂРѕС‚С€Рµ СЃР»РѕРІРѕ:', min_slovo)
 
-
-#Variant - 2
-s = 'Програма виводить найдовше та найкоротше слово введене корисутвачем'
-a = s.split(' ')
-
-max_len = 0
-min_len = len(a)
-max_slovo = ''
-min_slovo = ''
-for i in range(len(a)):
-    if len(a[i]) > max_len:
-        max_len = len(a[i])
-        max_slovo = a[i]
-    elif len(a[i]) < min_len:
-        min_len = len(a[i])
-        min_slovo = a[i]
-
-print('Найдовше слово: ', max_slovo, max_len)
-print('Найкоротше слово: ', min_slovo, min_len)
-
-#Variant - 3
-s = input('Введіть тут ваш текст: ').split(' ')
-count = 0
-for i in s:
-    if len(i) > count:
-        count = len(i)
-        word = i
-print(word)
